@@ -1,4 +1,5 @@
 import Image from "next/image";
+import InteractiveSection from "@/components/InteractiveSection";
 
 export default function Home() {
   return (
@@ -65,51 +66,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* RSVP Placeholder Section */}
-      <section className="bg-warrior-gold/10 px-4 py-12 md:px-8 md:py-16 lg:px-16">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-warrior-blue mb-4 sm:text-4xl">
-            RSVP
-          </h2>
-          <div className="rounded-xl border-2 border-dashed border-warrior-blue/20 bg-warrior-white p-8 md:p-12">
-            <p className="text-xl font-semibold text-warrior-blue">RSVP Coming Soon</p>
-            <p className="mt-2 text-gray-500">
-              We&apos;re setting up the RSVP form. Check back shortly!
-            </p>
-            {/* S02: RSVP form component will replace this placeholder */}
-          </div>
-        </div>
-      </section>
-
-      {/* Guest List Placeholder Section */}
-      <section className="bg-warrior-white px-4 py-12 md:px-8 md:py-16 lg:px-16">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-warrior-blue mb-4 sm:text-4xl">
-            Guest List
-          </h2>
-          <div className="rounded-xl border-2 border-dashed border-warrior-blue/20 bg-warrior-blue/5 p-8 md:p-12">
-            <p className="text-lg text-gray-500">
-              Guest list will appear here once RSVPs open.
-            </p>
-            {/* S02: Guest list component will replace this placeholder */}
-          </div>
-        </div>
-      </section>
-
-      {/* Food Signups Placeholder Section */}
-      <section className="bg-warrior-gold/10 px-4 py-12 md:px-8 md:py-16 lg:px-16">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-warrior-blue mb-4 sm:text-4xl">
-            Food Signups
-          </h2>
-          <div className="rounded-xl border-2 border-dashed border-warrior-blue/20 bg-warrior-white p-8 md:p-12">
-            <p className="text-lg text-gray-500">
-              Food signup list will appear here. Potluck style — bring your best dish!
-            </p>
-            {/* S02: Food signups component will replace this placeholder */}
-          </div>
-        </div>
-      </section>
+      <InteractiveSection />
 
       {/* Donation CTA Section */}
       <section className="bg-warrior-blue px-4 py-12 md:px-8 md:py-16 lg:px-16">
