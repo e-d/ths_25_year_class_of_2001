@@ -5,10 +5,15 @@
   --color-warrior-gold: #FFB81C;
   --color-warrior-white: #FFFFFF;
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair), Georgia, serif;
 }
 
 body {
   background: var(--color-warrior-white);
   color: #1a1a1a;
   font-family: var(--font-sans);
+}
+
+h1, h2 {
+  font-family: var(--font-display);
 }

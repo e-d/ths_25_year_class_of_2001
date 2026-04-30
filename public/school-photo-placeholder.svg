@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#003DA5" rx="12"/>
+  <rect x="20" y="20" width="760" height="460" fill="none" stroke="#FFB81C" stroke-width="3" stroke-dasharray="12 6" rx="8"/>
+  <text x="400" y="220" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" fill="#FFB81C">THS Class of 2001</text>
+  <text x="400" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#FFFFFF">School Photo</text>
+  <text x="400" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="rgba(255,255,255,0.6)">Replace with public/school-photo.jpg</text>
+</svg>
