@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warrior-blue: #003DA5;
+  --color-warrior-gold: #FFB81C;
+  --color-warrior-white: #FFFFFF;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-warrior-white);
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+}
