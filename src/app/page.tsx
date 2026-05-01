@@ -30,6 +30,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="bg-warrior-blue/95 px-4 py-10 md:px-8 md:py-14 lg:px-16">
+        <div className="mx-auto max-w-3xl">
+          <div className="relative w-full overflow-hidden rounded-xl border-2 border-warrior-gold/30 shadow-xl" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/-YK58fNZbfY?autoplay=1&mute=1&loop=1&playlist=-YK58fNZbfY"
+              title="THS Class of 2001"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Event Details Section */}
       <section className="bg-warrior-white px-4 py-12 md:px-8 md:py-16 lg:px-16">
         <div className="mx-auto max-w-3xl">
