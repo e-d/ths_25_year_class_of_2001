@@ -8,13 +8,12 @@ export default function Home() {
       <section className="relative bg-warrior-blue px-4 py-16 text-center md:px-8 md:py-24 lg:px-16">
         <div className="mx-auto max-w-3xl">
           <div className="mx-auto mb-8 overflow-hidden rounded-xl border-4 border-warrior-gold shadow-2xl md:mb-12">
-            {/* Replace school-photo-placeholder.svg with school-photo.jpg when available */}
             <Image
-              src="/school-photo-placeholder.svg"
-              alt="THS Class of 2001 school photo"
+              src="/t-ville.jpg"
+              alt="Taylorsville, Utah"
               width={800}
               height={500}
-              className="w-full h-auto"
+              className="w-full h-auto object-cover"
               priority
             />
           </div>
