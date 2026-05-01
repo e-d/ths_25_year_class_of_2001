@@ -45,3 +45,4 @@ next-env.d.ts
 
 # ── GSD self-heal: .gsd is a symlink to external state ──
 .gsd
+.env*.local

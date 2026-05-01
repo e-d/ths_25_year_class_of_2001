@@ -116,6 +116,7 @@ export default function RsvpForm({ onSuccess }: { onSuccess?: () => void }) {
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
           Email <span className="text-red-500">*</span>
+          <span className="block text-xs font-normal text-gray-400">Used for event reminders only</span>
         </label>
         <input
           id="email"
@@ -130,6 +131,7 @@ export default function RsvpForm({ onSuccess }: { onSuccess?: () => void }) {
       <div>
         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
           Phone <span className="text-red-500">*</span>
+          <span className="block text-xs font-normal text-gray-400">Used for event reminders only</span>
         </label>
         <input
           id="phone"
