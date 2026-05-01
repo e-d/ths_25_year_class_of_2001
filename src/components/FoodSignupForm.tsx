@@ -87,7 +87,7 @@ export default function FoodSignupForm({ onSuccess }: { onSuccess?: () => void }
       </button>
 
       <p className="text-xs text-gray-500 text-center">
-        Bringing more than one dish? Submit again for each item.
+        Bringing something else? Submit again! Text Ed @ 801-718-1086 to delete anything.
       </p>
     </form>
   );

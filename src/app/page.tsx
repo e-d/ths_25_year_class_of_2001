@@ -56,7 +56,7 @@ export default function Home() {
               <div className="text-2xl mb-2">&#x1F4C5;</div>
               <h3 className="font-semibold text-warrior-blue text-lg">Date & Time</h3>
               <p className="mt-1 text-gray-700">Saturday, June 20, 2026</p>
-              <p className="text-gray-700">5:00 PM</p>
+              <p className="text-sm text-gray-500 italic">5:00 PM</p>
             </div>
             <div className="rounded-xl bg-warrior-blue/5 border border-warrior-blue/10 p-6">
               <div className="text-2xl mb-2">&#x1F4CD;</div>
@@ -67,14 +67,14 @@ export default function Home() {
             <div className="rounded-xl bg-warrior-blue/5 border border-warrior-blue/10 p-6">
               <div className="text-2xl mb-2">&#x1F372;</div>
               <h3 className="font-semibold text-warrior-blue text-lg">Food - Potluck style</h3>
-              <p className="mt-1 text-gray-700">Pulled pork sandwiches and drinks provided</p>
+              <p className="mt-1 text-gray-700">Pulled pork sandwiches/drinks provided</p>
               <p className="text-sm text-gray-500">Sign up for what you&apos;re bringing below</p>
             </div>
             <div className="rounded-xl bg-warrior-blue/5 border border-warrior-blue/10 p-6">
               <div className="text-2xl mb-2">&#x1F393;</div>
               <h3 className="font-semibold text-warrior-blue text-lg">Who</h3>
               <p className="mt-1 text-gray-700">Taylorsville High School</p>
-              <p className="text-gray-700">Class of 2001 & guests</p>
+              <p className="text-sm text-gray-500 italic">Class of 2001 & +1 adult</p>
             </div>
           </div>
         </div>
@@ -112,14 +112,42 @@ export default function Home() {
       <footer className="bg-warrior-blue/95 px-4 py-8 text-center md:px-8">
         <div className="mx-auto max-w-3xl">
           <p className="text-warrior-white/80 text-sm">
-            Questions? Reach out at{" "}
-            <a
-              href="mailto:ed.st.louis@gmail.com"
-              className="text-warrior-gold hover:underline"
-            >
-              ed.st.louis@gmail.com
-            </a>
+            Questions? Reach out to any of us:
           </p>
+          <ul className="mt-3 flex flex-col items-center gap-1 text-sm">
+            <li>
+              <a
+                href="mailto:chalisefarr2@gmail.com"
+                className="text-warrior-gold hover:underline"
+              >
+                Chalise Farr
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:ed.st.louis@gmail.com"
+                className="text-warrior-gold hover:underline"
+              >
+                Ed St. Louis
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:heidiabrown@gmail.com"
+                className="text-warrior-gold hover:underline"
+              >
+                Heidi Brown
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:tessac422@gmail.com"
+                className="text-warrior-gold hover:underline"
+              >
+                Tessa Cutler
+              </a>
+            </li>
+          </ul>
           <div className="mt-4 h-px w-16 mx-auto bg-warrior-gold/40" />
           <p className="mt-4 text-warrior-white/50 text-xs">
             Made with love for the Class of 2001
