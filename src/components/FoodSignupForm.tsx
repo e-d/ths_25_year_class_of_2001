@@ -83,7 +83,7 @@ export default function FoodSignupForm({ onSuccess }: { onSuccess?: () => void }
         disabled={status === "submitting"}
         className="w-full rounded-full bg-warrior-gold px-6 py-3 text-sm font-bold text-warrior-blue shadow-md transition hover:bg-warrior-gold/90 active:scale-[0.98] disabled:opacity-60"
       >
-        {status === "submitting" ? "Adding..." : "Sign Up to Bring This"}
+        {status === "submitting" ? "Adding..." : "Sign Up"}
       </button>
 
       <p className="text-xs text-gray-500 text-center">

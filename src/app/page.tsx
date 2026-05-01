@@ -74,7 +74,7 @@ export default function Home() {
               <div className="text-2xl mb-2">&#x1F393;</div>
               <h3 className="font-semibold text-warrior-blue text-lg">Who</h3>
               <p className="mt-1 text-gray-700">Taylorsville High School</p>
-              <p className="text-sm text-gray-500 italic">Class of 2001 & +1 adult</p>
+              <p className="text-sm text-gray-500 italic">Class of 2001 grad & +1 adult</p>
             </div>
           </div>
         </div>
