@@ -42,24 +42,24 @@ export default function Home() {
               <div className="text-2xl mb-2">&#x1F4C5;</div>
               <h3 className="font-semibold text-warrior-blue text-lg">Date & Time</h3>
               <p className="mt-1 text-gray-700">Saturday, June 20, 2026</p>
-              <p className="text-gray-700">6:00 PM</p>
+              <p className="text-gray-700">5:00 PM</p>
             </div>
             <div className="rounded-xl bg-warrior-blue/5 border border-warrior-blue/10 p-6">
               <div className="text-2xl mb-2">&#x1F4CD;</div>
               <h3 className="font-semibold text-warrior-blue text-lg">Location</h3>
-              <p className="mt-1 text-gray-700">Taylorsville, UT</p>
-              <p className="text-sm text-gray-500 italic">Venue details coming soon</p>
+              <p className="mt-1 text-gray-700">Taylorsville High School</p>
+              <p className="text-sm text-gray-500 italic">5400 S. Redwood Rd.</p>
             </div>
             <div className="rounded-xl bg-warrior-blue/5 border border-warrior-blue/10 p-6">
               <div className="text-2xl mb-2">&#x1F372;</div>
-              <h3 className="font-semibold text-warrior-blue text-lg">Food</h3>
-              <p className="mt-1 text-gray-700">Potluck style</p>
+              <h3 className="font-semibold text-warrior-blue text-lg">Food - Potluck style</h3>
+              <p className="mt-1 text-gray-700">Pulled pork sandwiches and drinks provided</p>
               <p className="text-sm text-gray-500">Sign up for what you&apos;re bringing below</p>
             </div>
             <div className="rounded-xl bg-warrior-blue/5 border border-warrior-blue/10 p-6">
               <div className="text-2xl mb-2">&#x1F393;</div>
               <h3 className="font-semibold text-warrior-blue text-lg">Who</h3>
-              <p className="mt-1 text-gray-700">Timpview High School</p>
+              <p className="mt-1 text-gray-700">Taylorsville High School</p>
               <p className="text-gray-700">Class of 2001 & guests</p>
             </div>
           </div>
