@@ -8,7 +8,7 @@ export async function POST(request: Request) {
     return Response.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const { firstName, lastName, maidenName, email, phone, plusOne, plusOneName, bringing } = body as {
+  const { firstName, lastName, maidenName, email, phone, plusOne, plusOneName } = body as {
     firstName?: string;
     lastName?: string;
     maidenName?: string;
@@ -16,7 +16,6 @@ export async function POST(request: Request) {
     phone?: string;
     plusOne?: boolean;
     plusOneName?: string;
-    bringing?: string;
   };
 
   if (!firstName || !lastName || !email || !phone) {
@@ -33,8 +32,8 @@ export async function POST(request: Request) {
 
   try {
     await db.execute({
-      sql: `INSERT INTO rsvps (first_name, last_name, maiden_name, email, phone, plus_one, plus_one_name, bringing)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      sql: `INSERT INTO rsvps (first_name, last_name, maiden_name, email, phone, plus_one, plus_one_name)
+            VALUES (?, ?, ?, ?, ?, ?, ?)`,
       args: [
         firstName.trim(),
         lastName.trim(),
@@ -43,7 +42,6 @@ export async function POST(request: Request) {
         phone.trim(),
         plusOne ? 1 : 0,
         plusOneName?.trim() || null,
-        bringing?.trim() || null,
       ],
     });
   } catch (err: unknown) {

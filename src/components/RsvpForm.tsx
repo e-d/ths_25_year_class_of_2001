@@ -15,7 +15,6 @@ export default function RsvpForm({ onSuccess }: { onSuccess?: () => void }) {
   const [phone, setPhone] = useState("");
   const [plusOne, setPlusOne] = useState(false);
   const [plusOneName, setPlusOneName] = useState("");
-  const [bringing, setBringing] = useState("");
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -33,7 +32,6 @@ export default function RsvpForm({ onSuccess }: { onSuccess?: () => void }) {
         phone,
         plusOne,
         plusOneName: plusOne ? plusOneName : undefined,
-        bringing: bringing || undefined,
       }),
     });
 
@@ -170,19 +168,6 @@ export default function RsvpForm({ onSuccess }: { onSuccess?: () => void }) {
           />
         </div>
       )}
-
-      <div>
-        <label htmlFor="bringing" className="block text-sm font-medium text-gray-700 mb-1">
-          Bringing food? <span className="text-gray-400 font-normal">(optional — e.g. &quot;pasta salad&quot;)</span>
-        </label>
-        <input
-          id="bringing"
-          type="text"
-          value={bringing}
-          onChange={(e) => setBringing(e.target.value)}
-          className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-warrior-blue focus:ring-2 focus:ring-warrior-blue/20 focus:outline-none"
-        />
-      </div>
 
       <button
         type="submit"

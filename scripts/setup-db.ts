@@ -21,6 +21,16 @@ async function main() {
     )
   `);
   console.log("Table 'rsvps' ready.");
+
+  await db.execute(`
+    CREATE TABLE IF NOT EXISTS food_signups (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      item TEXT NOT NULL,
+      created_at TEXT NOT NULL DEFAULT (datetime('now'))
+    )
+  `);
+  console.log("Table 'food_signups' ready.");
 }
 
 main().catch((err) => {
