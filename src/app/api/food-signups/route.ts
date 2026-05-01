@@ -3,16 +3,22 @@ import { db } from "@/lib/db";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const result = await db.execute(
-    "SELECT name, item FROM food_signups ORDER BY created_at ASC",
-  );
+  try {
+    const result = await db.execute(
+      "SELECT name, item FROM food_signups ORDER BY created_at ASC",
+    );
 
-  const signups = result.rows.map((row) => ({
-    name: row.name,
-    item: row.item,
-  }));
+    const signups = result.rows.map((row) => ({
+      name: row.name,
+      item: row.item,
+    }));
 
-  return Response.json(signups);
+    return Response.json(signups);
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("GET /api/food-signups error:", message);
+    return Response.json({ error: message }, { status: 500 });
+  }
 }
 
 export async function POST(request: Request) {
@@ -32,10 +38,16 @@ export async function POST(request: Request) {
     );
   }
 
-  await db.execute({
-    sql: "INSERT INTO food_signups (name, item) VALUES (?, ?)",
-    args: [name.trim(), item.trim()],
-  });
+  try {
+    await db.execute({
+      sql: "INSERT INTO food_signups (name, item) VALUES (?, ?)",
+      args: [name.trim(), item.trim()],
+    });
 
-  return Response.json({ success: true });
+    return Response.json({ success: true });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("POST /api/food-signups error:", message);
+    return Response.json({ error: message }, { status: 500 });
+  }
 }
